@@ -1,6 +1,40 @@
-# Getting Started with Create React App
+# Tic Tac Toe
+
+This project is a tutorial designed for people to learn [React](https://reactjs.org/tutorial/tutorial.html).
+In this tutorial, we will build an interative [tic-tac-toe game](https://codepen.io/gaearon/pen/gWWZgR?editors=0010) with React.
+
+The tutorial is divided into several sections:
+- Setup for the Tutorial will give you a starting point to follow the tutorial.
+- Overview will teach you the fundamentals of React: components, props, and state.
+- Completing the Game will teach you the most common techniques in React development.
+- Adding Time Travel will give you a deeper insight into the unique strengths of React.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## Setup for the tutorial
+1. Make sure you have a recent version of [Node.js](https://nodejs.org/en/) installed.
+2. Follow the [installation instructions for Create React App](https://reactjs.org/docs/create-a-new-react-app.html#create-react-app) to make a new project.
+```
+npx create-react-app tictactoe
+```
+3. Delete all files in the `src/` folder of the new project
+```
+cd tictactoe
+del *
+cd ..
+```
+4. Add a file named `index.css` in the `src/` folder with [this CSS code](https://codepen.io/gaearon/pen/oWWQNa?editors=0100).
+5. Add a file named `index.js` in the `src/` folder with [this JS code](https://codepen.io/gaearon/pen/oWWQNa?editors=0010).
+6. Add these three lines to the top of `index.js` in the `src/` folder:
+```
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import './index.css';
+```
+
+Now we can run `npm start` in the project folder and open `http://localhost:3000` in the broswer.
+
+After we have setup for the tutorial, we can get started by following the [instructions](https://reactjs.org/tutorial/tutorial.html).
 
 ## Available Scripts
 
