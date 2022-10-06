@@ -92,11 +92,14 @@ class Game extends React.Component {
         const moves = history.map((step, move) => {
             const player = move % 2 !== 0 ? 'X' : 'O';
             const location = formatLocation(step.location);
-            const desc = move ?
+            let desc = move ?
                 player + ': (' + location + ')':
                 'Game start';
                 /* 'Go to move #' + move :
                 'Go to game start'; */
+            if (this.state.stepNumber == move) {
+                desc = <b>{desc}</b>;
+            } 
             return (
                 <li key={move}>
                     <button onClick={() => this.jumpTo(move)}>{desc}</button>
