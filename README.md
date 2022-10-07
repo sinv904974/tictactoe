@@ -1,6 +1,6 @@
 # Tic Tac Toe
 
-This project is a (tutorial)[https://reactjs.org/tutorial/tutorial.html] designed for people to learn [React](https://reactjs.org/tutorial/tutorial.html).
+This project is a [tutorial](https://reactjs.org/tutorial/tutorial.html) designed for people to learn [React](https://reactjs.org/tutorial/tutorial.html).
 In this tutorial, we will build an interative [tic-tac-toe game](https://codepen.io/gaearon/pen/gWWZgR?editors=0010) with React.
 
 The tutorial is divided into several sections:
