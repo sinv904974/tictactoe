@@ -16,9 +16,6 @@ function Square(props) {
 
 class Board extends React.Component {
     renderSquare(i) {
-        console.log(this.props.line);
-        console.log(i);
-
         return (
             <Square
                 value={this.props.squares[i]}
@@ -132,7 +129,9 @@ class Game extends React.Component {
                 </div>
                 <div className="game-info">
                     <div>{status}</div>
-                    <button onClick={() => this.reverseMoves()}>Reverse</button>
+                    <button onClick={() => this.reverseMoves()}>
+                        {this.state.ascending? 'Descending' : 'Ascending'}
+                    </button>
                     <ol reversed={ this.state.ascending ? false : true }>{moves}</ol>
                 </div>
             </div>
